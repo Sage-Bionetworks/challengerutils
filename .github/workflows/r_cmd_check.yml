@@ -57,10 +57,10 @@ jobs:
           RHUB_PLATFORM: linux-x86_64-ubuntu-gcc
         run: |
           Rscript -e "remotes::install_github('r-hub/sysreqs')"
-          Rscript -e "install.packages("testthat")
-          Rscript -e "install.packages("mockery")
-          Rscript -e "install.packages("dplyr")
-          Rscript -e "install.packages("reticulate")
+          Rscript -e "install.packages('testthat')"
+          Rscript -e "install.packages('mockery')"
+          Rscript -e "install.packages('dplyr')"
+          Rscript -e "install.packages('reticulate')"
           sudo apt-get install -y python3
           sudo apt-get install -y python3-pip --upgrade
           sudo apt-get install -y python3-setuptools
