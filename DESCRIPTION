@@ -1,0 +1,17 @@
+Package: challengerutils
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Thomas",
+           family = "Yu",
+           role = c("aut", "cre"),
+           email = "thomas.yu@sagebase.org",
+           comment = c(ORCID = "0000-0002-5841-0198"))
+Description: What the package does (one paragraph).
+License: Apache License (>= 2.0)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat
