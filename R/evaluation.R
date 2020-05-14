@@ -1,7 +1,7 @@
 #' Wraps challengeutils.utils.evaluation_queue_query. Written for tests
 #'
 #' @param syn A Synapse object
-#' @param uri A URI for evaluation queues (select * from evaluation_12345)
+#' @param query A URI for evaluation queues (select * from evaluation_12345)
 .evaluation_queue_query <- function(syn, query) {
   challengeutils <- import('challengeutils')
   query_func <- challengeutils$utils$evaluation_queue_query
@@ -11,7 +11,7 @@
 #' Queries an evaluation queue for submissions
 #'
 #' @param syn A Synapse object
-#' @param uri A URI for evaluation queues (select * from evaluation_12345)
+#' @param query A URI for evaluation queues (select * from evaluation_12345)
 #'
 #' @return The leaderboard results in a tibble.
 #' @examples

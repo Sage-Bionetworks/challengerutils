@@ -9,7 +9,7 @@ evaluation_queue_query(syn, query)
 \arguments{
 \item{syn}{A Synapse object}
 
-\item{uri}{A URI for evaluation queues (select * from evaluation_12345)}
+\item{query}{A URI for evaluation queues (select * from evaluation_12345)}
 }
 \value{
 The leaderboard results in a tibble.
