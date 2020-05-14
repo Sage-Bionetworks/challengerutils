@@ -6,19 +6,22 @@ This package uses `reticulate` to wrap `challengeutils` to create the Synapse R 
 
 ## Installation
 
-*NOTE*: This package will not work with `synapser`.  Do not load `library(synapser)`
+This package requires the an installation of Python > 3.6 and `challengeutils`. *NOTE*: This package will not work with `synapser`.  Do not load `library(synapser)`
 
-In R:
-```
-devtools::install_github("Sage-Bionetworks/challengescoring")
-```
 
-In command line, we recommend you using anaconda:
+In command line, we recommend you using anaconda.  Instructions to install anaconda can be found [here](https://docs.anaconda.com/anaconda/install/)
 
 ```
 conda create -n challenge python=3.7
 pip install challengeutils
 ```
+
+In R:
+
+```
+devtools::install_github("Sage-Bionetworks/challengerutils")
+```
+
 
 ## Usage
 
