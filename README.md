@@ -5,7 +5,7 @@ This package uses `reticulate` to wrap `challengeutils` to create the Synapse R 
 
 ## Installation
 
-This package requires the installation of Python > 3.6 and `challengeutils`. *NOTE*: This package will not work with `synapser`.  Do not load `library(synapser).` To use core Synapse client functions with this package, import the Python `synapseclient` like so: 
+This package requires the installation of Python > 3.6 and `challengeutils`. *NOTE*: This package will not work with `synapser`.  Do not load `library(synapser).` To use core Synapse client functions in the same R environment as the `challengeutils` package, import the Python `synapseclient` like so: 
 
 ```
 synapseclient <- import('synapseclient')
@@ -23,7 +23,7 @@ pip install challengeutils
 In R:
 
 ```
-devtools::install_github("Sage-Bionetworks/challengerutils")
+remotes::install_github("Sage-Bionetworks/challengerutils")
 ```
 
 
