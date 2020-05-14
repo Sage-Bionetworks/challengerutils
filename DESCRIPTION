@@ -16,6 +16,6 @@ RoxygenNote: 6.1.1
 Suggests:
     testthat,
     mockery
-Imports:
+Depends:
     dplyr,
     reticulate
