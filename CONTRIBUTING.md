@@ -35,9 +35,6 @@ devtools::install()
 
 This package uses [semantic versioning](https://semver.org/) for releasing new versions. The version should be updated on the `develop` branch as changes are reviewed and merged in by a code maintainer. The version for the package is maintained in the [challengeutils/__version__.py](challengeutils/__version__.py) file.  A github release should also occur every time `develop` is pushed into `master` and it should match the version for the package.
 
-
-
-
 ### Testing
 
 Please add tests for new code. These might include unit tests (to test specific functionality of code that was added to support fixing the bug or feature), integration tests (to test that the feature is usable - e.g., it should have complete the expected behavior as reported in the feature request or bug report), or both.
