@@ -25,7 +25,7 @@ devtools::install_github("Sage-Bionetworks/challengerutils")
 
 ## Usage
 
-The functions will mimic the Python implementation of `challengeutils`.  PLease see the [documentation here](https://sage-bionetworks.github.io/challengeutils/).
+The functions will mimic the Python implementation of `challengeutils`.  Please see the [documentation here](https://sage-bionetworks.github.io/challengeutils/).
 
 * Query Evaluation Queue
 ```
