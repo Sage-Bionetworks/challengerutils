@@ -6,7 +6,7 @@ This package uses `reticulate` to wrap `challengeutils` to create the Synapse R 
 
 ## Installation
 
-This package requires the an installation of Python > 3.6 and `challengeutils`. *NOTE*: This package will not work with `synapser`.  Do not load `library(synapser)`
+This package requires the installation of Python > 3.6 and `challengeutils`. *NOTE*: This package will not work with `synapser`.  Do not load `library(synapser)`
 
 
 In command line, we recommend you using anaconda.  Instructions to install anaconda can be found [here](https://docs.anaconda.com/anaconda/install/)
