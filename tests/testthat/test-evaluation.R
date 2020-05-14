@@ -1,4 +1,4 @@
-test_that("multiplication works", {
+test_that("Evaluation Query tests", {
   challengeutils <- import('challengeutils')
   mock = mock(100)
   stub(evaluation_queue_query, '.evaluation_queue_query', mock)
@@ -6,6 +6,6 @@ test_that("multiplication works", {
   results = evaluation_queue_query("syn", "select * from foo")
   expect_called(mock, 1)
   expect_args(mock, 1, "syn", "select * from foo")
-  ex
+  expect_equal(results$objectId, "333")
 })
 

@@ -17,4 +17,5 @@ Depends:
     reticulate,
     dplyr
 Suggests:
-  testthat
+    testthat,
+    mockery
