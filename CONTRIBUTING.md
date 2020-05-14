@@ -15,6 +15,15 @@ git checkout develop
 git pull upstream develop
 ```
 
+### Writing Code
+To contribute functions, make sure you add your function to the correct script in the `R` folder.  Your function must be documented via `roxygen` style.  Once you've added a function, use devtools to build the documentation and install your package
+
+```
+devtools::document()
+devtools::install()
+```
+
+
 ### The development life cycle
 
 1. Pull the latest content from the `develop` branch of this central repository (not your fork).
@@ -25,6 +34,9 @@ git pull upstream develop
 > *A code maintainer must review and accept your pull request.* A code review (which happens with both the contributor and the reviewer present) is required for contributing. This can be performed remotely (e.g., Skype, Hangout, or other video or phone conference).
 
 This package uses [semantic versioning](https://semver.org/) for releasing new versions. The version should be updated on the `develop` branch as changes are reviewed and merged in by a code maintainer. The version for the package is maintained in the [challengeutils/__version__.py](challengeutils/__version__.py) file.  A github release should also occur every time `develop` is pushed into `master` and it should match the version for the package.
+
+
+
 
 ### Testing
 
