@@ -21,6 +21,7 @@
 #' syn <- synapseclient$Synapse()
 #' syn$login()
 #' leaderboard_results <- evaluation_queue_query(syn, 'select * from evaluation_12345')
+#' @import dplyr reticulate
 #' @export
 evaluation_queue_query <- function(syn, query) {
   leaderboard <- .evaluation_queue_query(syn, query)
