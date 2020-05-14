@@ -33,5 +33,4 @@ syn <- synapseclient$Synapse()
 syn$login()
 
 leaderboard_results <- evaluation_queue_query(syn, 'select * from evaluation_9614346')
-
 ```
