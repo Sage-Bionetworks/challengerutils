@@ -1,6 +1,5 @@
 # challengerutils
 
-
 This package uses `reticulate` to wrap `challengeutils` to create the Synapse R challenge utility functions.
 
 
