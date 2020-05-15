@@ -8,8 +8,6 @@ evaluation_queue_query(query)
 }
 \arguments{
 \item{query}{A URI for evaluation queues (select * from evaluation_12345)}
-
-\item{syn}{A Synapse object}
 }
 \value{
 The leaderboard results in a tibble.
@@ -20,8 +18,6 @@ Queries an evaluation queue for submissions
 \examples{
 library(challengerutils)
 use_condaenv('challenge')
-synapseclient <- import('synapseclient')
-syn <- synapseclient$Synapse()
-syn$login()
-leaderboard_results <- evaluation_queue_query(syn, 'select * from evaluation_12345')
+syn_login()
+leaderboard_results <- evaluation_queue_query('select * from evaluation_12345')
 }

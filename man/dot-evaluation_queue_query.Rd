@@ -8,8 +8,6 @@
 }
 \arguments{
 \item{query}{A URI for evaluation queues (select * from evaluation_12345)}
-
-\item{syn}{A Synapse object}
 }
 \description{
 Wraps challengeutils.utils.evaluation_queue_query. Written for tests
