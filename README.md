@@ -38,6 +38,13 @@ challengerutils::syn_login()
 leaderboard_results <- challengerutils::evaluation_queue_query('select * from evaluation_9614194')
 ```
 
+* Create a Challenge Space
+```
+challengerutils::syn_login()
+challenge <- challengerutils::createchallenge('Testing 1 now')
+```
+
+
 ## synapseclient
 
 As noted above, `library(reticulate)`-based packages like `challengerutils` are not compatible with `synapser`. To use core Synapse client functions in the same R environment as the `challengerutils` package, import the Python `synapseclient` using `reticulate`:
