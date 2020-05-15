@@ -4,12 +4,12 @@
 \alias{evaluation_queue_query}
 \title{Queries an evaluation queue for submissions}
 \usage{
-evaluation_queue_query(syn, query)
+evaluation_queue_query(query)
 }
 \arguments{
-\item{syn}{A Synapse object}
-
 \item{query}{A URI for evaluation queues (select * from evaluation_12345)}
+
+\item{syn}{A Synapse object}
 }
 \value{
 The leaderboard results in a tibble.
