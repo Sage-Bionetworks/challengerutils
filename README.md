@@ -32,18 +32,10 @@ library(challengerutils)
 reticulate::use_condaenv('challenge')
 ```
 
-* Import `synapseclient` Python package
-
-As noted above, `library(reticulate)`-based packages like `challengerutils` are not compatible with `synapser`. To use core Synapse client functions in the same R environment as the `challengerutils` package, import the Python `synapseclient` using `reticulate`: 
-
-```
-synapseclient <- reticulate::import('synapseclient')
-syn <- synapseclient$Synapse()
-syn$login()
-```
+* By default, the Python `synapseclient` and `challengeutils` is loaded.
 
 * Query Evaluation Queue
 ```
-syn_login()
+challengerutils::syn_login()
 leaderboard_results <- challengerutils::evaluation_queue_query('select * from evaluation_9614194')
 ```

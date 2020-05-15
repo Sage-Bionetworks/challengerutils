@@ -19,5 +19,5 @@ Queries an evaluation queue for submissions
 library(challengerutils)
 use_condaenv('challenge')
 syn_login()
-leaderboard_results <- evaluation_queue_query('select * from evaluation_12345')
+leaderboard_results <- evaluation_queue_query('select * from evaluation_9614194')
 }
