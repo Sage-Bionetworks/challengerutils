@@ -16,7 +16,7 @@
 #' Here are a list of available statuses.
 #' https://rest-docs.synapse.org/rest/org/sagebionetworks/evaluation/model/SubmissionStatusEnum.html
 #'
-#' @return Updated submisison status
+#' @return Updated submission status
 #' @examples
 #' library(challengerutils)
 #' use_condaenv('challenge')
