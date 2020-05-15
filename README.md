@@ -30,7 +30,7 @@ The functions will mimic the Python implementation of `challengeutils`.  Please 
 ```
 library(challengerutils)
 reticulate::use_condaenv('challenge')
-# Must run syn_login() to use any of the function below
+# Must run syn_login() to use any of the functions below
 challengerutils::syn_login()
 ```
 
