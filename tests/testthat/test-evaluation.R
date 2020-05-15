@@ -1,7 +1,6 @@
 library(mockery)
 
 test_that("Evaluation Query tests", {
-  challengeutils <- import('challengeutils')
   m = mock(100)
   stub(evaluation_queue_query, '.evaluation_queue_query', m)
   stub(evaluation_queue_query, "reticulate::iterate", list(list("objectId" = "333")))

@@ -30,12 +30,19 @@ The functions will mimic the Python implementation of `challengeutils`.  Please 
 ```
 library(challengerutils)
 reticulate::use_condaenv('challenge')
+# Must run syn_login() to use any of the functions below
+challengerutils::syn_login()
 ```
 
 * Query Evaluation Queue
 ```
-challengerutils::syn_login()
 leaderboard_results <- challengerutils::evaluation_queue_query('select * from evaluation_9614194')
+```
+
+* Change submission status
+
+```
+status <- challengerutils::change_submission_status("9698553", status="RECEIVED")
 ```
 
 ## synapseclient
