@@ -1,3 +1,3 @@
-- [ ] Did you reference the issue being addressed by number? (fixes #xxxx)
+- [ ] fixes #xxxx (Link github issue if appropriate)
 - [ ] Did you run your tests locally (instructions [here](https://github.com/Sage-Bionetworks/challengerutils/blob/master/CONTRIBUTING.md)?
 - [ ] Did you add a good description about your changes or additions?
