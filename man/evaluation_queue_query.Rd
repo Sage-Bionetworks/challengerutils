@@ -4,11 +4,9 @@
 \alias{evaluation_queue_query}
 \title{Queries an evaluation queue for submissions}
 \usage{
-evaluation_queue_query(syn, query)
+evaluation_queue_query(query)
 }
 \arguments{
-\item{syn}{A Synapse object}
-
 \item{query}{A URI for evaluation queues (select * from evaluation_12345)}
 }
 \value{
@@ -20,8 +18,6 @@ Queries an evaluation queue for submissions
 \examples{
 library(challengerutils)
 use_condaenv('challenge')
-synapseclient <- import('synapseclient')
-syn <- synapseclient$Synapse()
-syn$login()
-leaderboard_results <- evaluation_queue_query(syn, 'select * from evaluation_12345')
+syn_login()
+leaderboard_results <- evaluation_queue_query('select * from evaluation_12345')
 }
