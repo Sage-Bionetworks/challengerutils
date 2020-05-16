@@ -2,6 +2,7 @@
 
 export(change_submission_status)
 export(evaluation_queue_query)
+export(get_submitter_name)
 export(syn_login)
 import(dplyr)
 import(reticulate)
