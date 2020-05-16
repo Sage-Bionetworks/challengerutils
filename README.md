@@ -11,7 +11,7 @@ In command line, we recommend you using anaconda.  Instructions to install anaco
 
 ```
 conda create -n challenge python=3.7
-pip install challengeutils
+pip install challengeutils>=2.1
 ```
 
 In R:
