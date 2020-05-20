@@ -8,5 +8,6 @@
 #' @import reticulate
 #' @export
 syn_login <- function(username = NULL, password = NULL){
+  syn <<- synapseclient$Synapse()
   syn$login(username, password)
 }
