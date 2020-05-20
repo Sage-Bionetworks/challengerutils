@@ -6,7 +6,7 @@
 #' https://rest-docs.synapse.org/rest/org/sagebionetworks/evaluation/model/SubmissionStatusEnum.html
 .change_submission_status <- function(submissionid, status = "RECEIVED") {
   change_status <- challengeutils$utils$change_submission_status
-  change_status(syn = syn, submissionid = submissionid, status = status)
+  change_status(syn = .syn, submissionid = submissionid, status = status)
 }
 
 #' Changes a status of a submission
