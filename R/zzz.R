@@ -1,14 +1,18 @@
 challengeutils <- NULL
 synapseclient <- NULL
-syn <- NULL
 
 .onLoad <- function(libname, pkgname) {
 
-  #if challengeutils has not already been imported, do it
-  challengeutils <<- reticulate::import('challengeutils', delay_load = T)
+  syn_inst <- reticulate::py_module_available("synapseclient")
+  chal_inst <- reticulate::py_module_available("challengeutils")
 
-  #if synapseclient has not already been imported, do it
-  synapseclient <<- reticulate::import('synapseclient', delay_load = T)
-  syn <<- synapseclient$Synapse()
+  if(chal_inst){
+    challengeutils <<- reticulate::import('challengeutils', delay_load = T)
+  }
+
+  if(syn_inst){
+    synapseclient <<- reticulate::import('synapseclient', delay_load = T)
+  }
 
 }
+

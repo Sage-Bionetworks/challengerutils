@@ -3,7 +3,7 @@
 #' @param query A URI for evaluation queues (select * from evaluation_12345)
 .evaluation_queue_query <- function(query) {
   query_func <- challengeutils$utils$evaluation_queue_query
-  query_func(syn = syn, uri = query)
+  query_func(syn = .syn, uri = query)
 }
 
 #' Queries an evaluation queue for submissions
