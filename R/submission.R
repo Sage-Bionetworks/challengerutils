@@ -27,3 +27,28 @@
 change_submission_status <- function(submissionid, status = "RECEIVED") {
   .change_submission_status(submissionid, status = status)
 }
+
+#' Wraps challengeutils.utils._get_submitter_name. Written for tests
+#'
+#' @param submitterid submitter id, can be a Synapse team or user Id.
+.get_submitter_name <- function(submitterid) {
+  get_submitter = challengeutils$utils$`_get_submitter_name`
+  get_submitter(syn = syn, submitterid = submitterid)
+}
+
+#' Gets the Synapse team name or username given a submitterid
+#'
+#' @param submitterid submitter id, can be a Synapse team or user Id.
+#'
+#' @return Team or User name
+#' @examples
+#' library(challengerutils)
+#' use_condaenv('challenge')
+#' syn_login()
+#' username <- get_submitter_name('3324230')
+#' teamname <- get_submitter_name('3377845')
+#' @import reticulate
+#' @export
+get_submitter_name <- function(submitterid) {
+  .get_submitter_name(submitterid)
+}
