@@ -11,7 +11,7 @@ In command line, we recommend you using anaconda.  Instructions to install anaco
 
 ```
 conda create -n challenge python=3.7
-pip install challengeutils
+pip install challengeutils>=2.1
 ```
 
 In R:
@@ -40,10 +40,15 @@ leaderboard_results <- challengerutils::evaluation_queue_query('select * from ev
 ```
 
 * Change submission status
-
 ```
 status <- challengerutils::change_submission_status("9698553", status="RECEIVED")
 ```
+
+* Create a Challenge Space
+```
+challenge <- challengerutils::createchallenge('Testing 1 now')
+```
+
 
 ## synapseclient
 
